@@ -55,35 +55,35 @@ substrings are found.
 
 ```js
 const str = 'abcde'
-const requiredSubstrings = [ 'f' ]
+const requiredSubstrings = ['f']
 const result = hasRequiredSubstrings(str, requiredSubstrings)
 // result === false
 ```
 
 ```js
 const str = 'abcde'
-const requiredSubstrings = [ 'a' ]
+const requiredSubstrings = ['a']
 const result = hasRequiredSubstrings(str, requiredSubstrings)
 // result === true
 ```
 
 ```js
 const str = 'abcde'
-const requiredSubstrings = [ 'a', 'b', 'f']
+const requiredSubstrings = ['a', 'b', 'f']
 const result = hasRequiredSubstrings(str, requiredSubstrings)
 // result === false
 ```
 
 ```js
 const str = 'abcde'
-const requiredSubstrings = [ 'a', 'b', 'c']
+const requiredSubstrings = ['a', 'b', 'c']
 const result = hasRequiredSubstrings(str, requiredSubstrings)
 // result === true
 ```
 
 ```js
 const str = 'a man a plan a canal'
-const requiredSubstrings = [ 'man', 'plan', 'canal' ]
+const requiredSubstrings = ['man', 'plan', 'canal']
 const result = hasRequiredSubstrings(str, requiredSubstrings)
 // result === true
 ```
@@ -100,7 +100,7 @@ With `allowLastSubstringToBleed` set to `true`, it returns `true`.
 
 ```js
 const str = 'a man a plan a c'
-const requiredSubstrings = [ 'man', 'plan', 'canal' ]
+const requiredSubstrings = ['man', 'plan', 'canal']
 const allowLastSubstringToBleed = true
 const result = hasRequiredSubstrings(str, requiredSubstrings, allowLastSubstringToBleed)
 // result === true
@@ -113,7 +113,7 @@ it is possible to set `allowLastSubstringToBleed` using an options style.
 
 ```js
 const str = 'a man a plan a c'
-const requiredSubstrings = [ 'man', 'plan', 'canal' ]
+const requiredSubstrings = ['man', 'plan', 'canal']
 const allowLastSubstringToBleed = true
 const result = hasRequiredSubstrings(str, requiredSubstrings, {
   allowLastSubstringToBleed: allowLastSubstringToBleed
